@@ -1,0 +1,32 @@
+Name = input("Please input your name: ")
+print("Welcome to the Adventure game", Name, ", Let's begin!")
+
+Enter = input("You are driving on a highway, you need to make a turn immediately (Choose= Left/Right): ").upper()
+
+if Enter == "Left":
+    
+    Enter = input("A little girl is injured and needs help (Choose = Helping/Driving by): ")
+    
+    if Enter == "Helping":
+        print("You became victim of a highway robbery, YOU LOSE!")
+        
+    elif Enter == "Driving by":
+        print("CONGRATS...You saved yourself from getting robbed!")
+        
+    else:
+        print("Invalid input, YOU LOSE!")
+
+elif Enter == "Right":
+    
+    Enter = input("You stopped at a gas station to get gas, a man handed you a piece of paper (Choose = Take/Decline): ")
+    
+    if Enter == "Take":
+        print("CONGRATS..You just received a road map to a treasure location")
+        
+    elif Enter == "Decline":
+        print("You lost the opportunity of locating treasure through a treasure map, YOU LOSE! ")
+        
+    else:
+        print("Invalid input, YOU LOOSE!")
+
+print("Thank you for trying, Goodbye", Name, "!")
