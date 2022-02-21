@@ -1,0 +1,46 @@
+print("Welcome to the game of quiz!")
+
+Playing = input("Are you willing to play this game?(yes/no): ")
+if Playing.lower() != "yes":
+    quit()
+
+print("Okay..Let's begin!")
+Score = 0
+
+Question = input("Who is the father of Computer science?: ")
+if Question.lower() == "charles babbage":
+    print("You Win!")
+    Score += 1
+else:
+    print("Incorrect!")
+
+Question = input("In a computer, most processing takes place in ?: ")
+if Question.lower() == "cpu":
+    print("You Win!")
+    Score += 1
+else:
+    print("Incorrect!")
+
+Question = input("What converts an entire program into machine language?: ")
+if Question.lower() == "compiler":
+    print("You Win!")
+    Score += 1
+else:
+    print("Incorrect!")
+
+Question = input("What does IBM stands for?: ")
+if Question.lower() == "international business machines":
+    print("You Win!")
+    Score += 1
+else:
+    print("Incorrect!")
+
+Question = input("The first computers were programmed using?: ")
+if Question.lower() == "machine language":
+    print("You Win!")
+    Score += 1
+else:
+    print("Incorrect!")
+
+print("You got", str(Score), "answers correct!")
+print("You got", str((Score/5) * 100), "%")
